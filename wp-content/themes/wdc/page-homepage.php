@@ -36,7 +36,9 @@ Template Name: Homepage
 			</div> <!-- end #content -->
 			
 			<div class="contact-form">
-				contact form goes here
+				<div class="row">
+					<?php echo do_shortcode( '[contact-form-7 id="7" title="Signup"]' ); ?>
+				</div>	
 			</div>
 			<div class="lightbox"></div>
 			

@@ -10,7 +10,6 @@
   position: relative;
   background: #fff; }
   .top-logo img {
-    padding: 0 20px;
     margin: 0 auto; }
 
 /* Content */
@@ -78,7 +77,30 @@
   margin: 0 auto;
   z-index: 999;
   left: 0;
-  right: 0; }
+  right: 0;
+  padding: 15px; }
+  .contact-form .fi-x {
+    position: absolute;
+    top: 0;
+    right: 4px;
+    padding: 11px;
+    font-size: 2rem;
+    color: #FFA000; }
+  .contact-form .heading {
+    text-align: center;
+    padding: 20px 0; }
+  .contact-form .logo-signup {
+    margin: 0 auto;
+    position: relative;
+    width: 285px;
+    height: 53px;
+    display: block; }
+  .contact-form input[type=email] {
+    height: 46px; }
+  .contact-form input[type=submit] {
+    width: 100%;
+    border: none;
+    padding: 12px; }
 
 .contact-form.animated {
   top: 100px; }

@@ -87,11 +87,11 @@ jQuery(document).ready(function($) {
 		$('.lightbox').fadeIn(200);	
 	});	
 
-	$('.lightbox').click(function() {
+	$('.lightbox, .fi-x').click(function() {
 		$('.contact-form').removeClass('animated bounceInDown');				
 		$('.contact-form').addClass('animated bounceOutUp',function(){
 		});			
-		$(this).fadeOut();	
+		$('.lightbox').fadeOut();	
 	});
 
  
