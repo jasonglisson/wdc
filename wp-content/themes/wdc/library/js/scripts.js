@@ -80,7 +80,20 @@ jQuery(document).ready(function($) {
 	$(window).resize(function() {
 	  viewport_height();
 	});
-	
+
+	$('.button').click(function() {
+		$('.contact-form').addClass('animated bounceInDown');
+		$('.contact-form').removeClass('bounceOutUp');					
+		$('.lightbox').fadeIn(200);	
+	});	
+
+	$('.lightbox').click(function() {
+		$('.contact-form').removeClass('animated bounceInDown');				
+		$('.contact-form').addClass('animated bounceOutUp',function(){
+		});			
+		$(this).fadeOut();	
+	});
+
  
 }); /* end of as page load scripts */
 

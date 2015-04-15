@@ -15,6 +15,7 @@ Template Name: Homepage
 					</div>	
 				</div>
 				<div class="content-wrap">
+					<div class="team-back"></div>					
 					<div class="header-text">
 						<h2>Some things are worth the wait</h2>
 						<h3>Our new website is almost ready</h3>
@@ -33,5 +34,10 @@ Template Name: Homepage
 				</div>
 				<div class="overlay"></div>
 			</div> <!-- end #content -->
+			
+			<div class="contact-form">
+				contact form goes here
+			</div>
+			<div class="lightbox"></div>
 			
 <?php get_footer(); ?>

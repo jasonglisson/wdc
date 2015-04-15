@@ -131,6 +131,9 @@ function joints_scripts_and_styles() {
     // register foundation icons
     wp_enqueue_style( 'foundation-icons', get_template_directory_uri() . '/library/css/icons/foundation-icons.css', array(), $theme_version, 'all' );
 
+    // register animate.css
+    wp_enqueue_style( 'animate', get_template_directory_uri() . '/library/css/animate.css', array(), $theme_version, 'all' );
+
     // comment reply script for threaded comments
     if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1)) {
       wp_enqueue_script( 'comment-reply' );

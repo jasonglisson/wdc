@@ -8,7 +8,7 @@
 }
 
 .top-logo {
-	padding: 10px 0;
+	padding: 20px 0;
 	z-index: 9;
 	position: relative;
 	background: #fff;
@@ -25,7 +25,14 @@
 	background:url(../images/bg.png);
 	background-size:cover;
 	background-position:center center;
-	
+	.team-back {
+		background: url(../images/team-back.png) center center no-repeat;
+		background-size:90%;
+		height:110px;
+		width:100%;
+		position:absolute;
+		top:120px;		
+	}		
 }
 
 .header-text {
@@ -61,6 +68,9 @@
 		&:hover {
 			border:4px solid rgba(255, 255, 255, 1);
 		}
+		&:active {
+			border:9px solid rgba(255, 255, 255, .5);			
+		}
 	}
 }
 
@@ -70,7 +80,33 @@
 		position:absolute;
 		width:100%;
 		height:100%;
-		background:rgba(0, 0, 0, 0.65);
+		background:rgba(0, 0, 0, 0.7);
 		top:0;
 	}
+}
+
+.contact-form {
+	position: absolute;
+	top: -300px;
+	width: 80%;
+	height: auto;
+	background: #fff;
+	border: grey;
+	margin: 0 auto;
+	z-index: 999;
+	left: 0;
+	right: 0;
+}
+.contact-form.animated {
+	top: 100px;	
+}	
+
+.lightbox {
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	z-index: 998;
+	top: 0;
+	display:none;
 }
