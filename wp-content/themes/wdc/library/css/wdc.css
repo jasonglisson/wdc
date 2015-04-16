@@ -14,7 +14,7 @@
 
 /* Content */
 .content-wrap {
-  background: url(../images/bg.png) center center repeat-x;
+  background: url(../images/bg.png) #2b2b2b center center repeat-x;
   background-size: contain; }
   .content-wrap .team-back {
     background: url(../images/team-back.png) center center no-repeat;
