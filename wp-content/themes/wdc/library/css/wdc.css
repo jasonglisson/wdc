@@ -15,18 +15,18 @@
 /* Content */
 .content-wrap {
   background: url(../images/bg.png);
-  background-size: cover;
+  background-size: contain;
   background-position: center center; }
   .content-wrap .team-back {
     background: url(../images/team-back.png) center center no-repeat;
-    background-size: 90%;
+    background-size: contain;
     height: 110px;
     width: 100%;
     position: absolute;
-    top: 120px; }
+    top: 160px; }
 
 .header-text {
-  top: 290px;
+  top: 340px;
   position: absolute;
   left: 0;
   right: 0;
@@ -49,7 +49,7 @@
     left: 0;
     right: 0;
     position: absolute;
-    margin: 55px auto 0 auto;
+    margin: 50px auto 0 auto;
     border-radius: 50%;
     border: 4px solid rgba(255, 255, 255, 0);
     transition: 0.3s all; }
@@ -68,8 +68,8 @@
     top: 0; }
 
 .contact-form {
-  position: absolute;
-  top: -300px;
+  position: fixed;
+  top: -400px;
   width: 80%;
   height: auto;
   background: #fff;
@@ -78,7 +78,7 @@
   z-index: 999;
   left: 0;
   right: 0;
-  padding: 15px; }
+  padding: 25px; }
   .contact-form .fi-x {
     position: absolute;
     top: 0;
@@ -113,3 +113,35 @@
   z-index: 998;
   top: 0;
   display: none; }
+
+footer.footer {
+  padding: 22px 0;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 0; }
+  footer.footer .copyright {
+    text-align: right;
+    padding-top: 10px; }
+  footer.footer .services {
+    text-align: left;
+    padding-top: 10px; }
+  footer.footer .footer-icon {
+    padding: 0; }
+    footer.footer .footer-icon img {
+      margin: 0 auto;
+      position: relative;
+      left: 0;
+      right: 0;
+      display: block; }
+
+@media screen and (min-width: 300px) and (max-width: 64em) {
+  footer .copyright {
+    text-align: center !important; }
+  footer .services {
+    text-align: center !important;
+    padding: 20px; }
+  footer .footer-icon {
+    padding: 10px !important; }
+ }
